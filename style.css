@@ -116,11 +116,12 @@ header a {
 }
 
 .favorite-albums img:hover{
-  transform: scale(1.05)
+  transform: scale(1.02)
 }
 
 .favorite-albums ul p {
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
+  padding: 0.5rem;
 }
 
 /*Videoclip*/
