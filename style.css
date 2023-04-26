@@ -1,12 +1,14 @@
 /*Palette*/
 :root {
   --background-color: #080432;
-  --primary-color: #3e3b4a;
-  --secondary-color: #2b0862;
+  --primary-color: #827dbb;
+  --secondary-color: #a59db3;
+  --input-color: #0e056c89;
   --typography-h1: 40px;
   --typography-h2: 32px;
   --typography-h3-a: 14px;
   --typography-p: 13.6x;
+
 }
 
 /*Reset*/
@@ -87,6 +89,7 @@ header a {
 
 /*Favorite albums*/
 .favorite-albums {
+  padding: 10%;
   display: flex;
   flex-direction:column;
   align-items:first center;
@@ -94,16 +97,20 @@ header a {
   
 }
 
+.favorite-albums h2 {
+  padding: 2.5%;
+}
+
 .favorite-albums ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  width: 40%;
+  width: 60%;
   list-style-type: none;
   text-align: center;
 }
 
 .favorite-albums img {
-  width: 80%;
+  width: 90%;
   padding: 0.5rem;
   transition: transform .2s;
 }
@@ -157,7 +164,7 @@ header a {
   width: 50%;
   list-style-type: none;
   text-align:right;
-  padding: 1rem;
+  padding: 0.5%;
 }
 
 /*Footer*/
@@ -190,9 +197,9 @@ header a {
   display: flex;
   flex-direction:row-reverse;
   width: 33%;
-  text-align:right;
-  background-color:inherit;
+  height: 53%;
+  text-align:center;
+  background-color: var(--input-color);
   font-family: var(--typography-p);
-  padding: 0.3rem;  
   margin-left:14.8rem; 
 } 
